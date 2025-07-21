@@ -4,7 +4,7 @@ packaged for Zig.
 
 `zig fetch --save git+https://github.com/ratakor/isocline-zig`
 ```zig
-const isocline = b.dependency("isocline-zig", .{}).module("isocline");
+const isocline = b.dependency("isocline", .{}).module("isocline");
 const exe = b.addExecutable(...);
 exe.root_module.addImport("isocline", isocline);
 ```
